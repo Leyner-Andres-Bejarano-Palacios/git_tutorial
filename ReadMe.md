@@ -26,3 +26,8 @@ In this example I am adding the changes to just one file but you can use the git
 
 ![Image](img/gitAddOnlyFilesYouNeed.png "git add only what you need command image")
 
+## In order to keep the codebase as clean (and lean) as possible use the gitignore file
+
+The gitignore file is something we add to the codebase in order to avoid thing like the cache files (.pyc), the libraries installed in the lib folder and other files and folders not supposed to be in the codebase. This is not just a aesthetic issue, is also about productivity, when you need to clone the repository or deploy the code somewhere (like a server or a container) doing it fast increase the amount of things that you can do in a day.
+
+![Image](img/gitignoreFile.png "gitignore File command image")
