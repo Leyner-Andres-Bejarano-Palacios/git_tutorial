@@ -12,4 +12,10 @@ Something that may happen to you when you are colaborating with partners in a re
 
 ![Image](img/mergeConflictResolution.png "merge conflict resolution command image")
 
+## creating a branch for the task you are carrying out
+
+Everu time you must change or add something to a codebase you must create a branch where your changes are stored, when you are done developing you must create a merge request because what you created must be reviwed by your peers
+
+![Image](img/gitCheckOutB.png "git Diff command image")
+
 
