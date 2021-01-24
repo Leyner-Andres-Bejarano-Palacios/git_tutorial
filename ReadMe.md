@@ -14,8 +14,15 @@ Something that may happen to you when you are colaborating with partners in a re
 
 ## creating a branch for the task you are carrying out
 
-Everu time you must change or add something to a codebase you must create a branch where your changes are stored, when you are done developing you must create a merge request because what you created must be reviwed by your peers
+Every time you must change or add something to a codebase you must create a branch where your changes are stored, when you are done developing you must create a merge request because what you created must be reviwed by your peers
 
-![Image](img/gitCheckOutB.png "git Diff command image")
+![Image](img/gitCheckOutB.png "git checkout b command image")
 
+## when you are creating your commits, add only the files that must go to the codebase 
+
+Something that a lot of us usuarlly get used to doing is using the command git add -A or git add . or git add -am... the first two are used to add all the changes, the last one would also add all changes but also would commit it. In the image I only added the changes to the ReadMe.md file (in this case because even when I was going to add the image to the codebase I also want the commits to be as atommic as possible).
+
+In this example I am adding the changes to just one file but you can use the git add to add changes to several files at the same time, something like, git add File_1.txt File_2.txt File_3.txt  
+
+![Image](img/gitAddOnlyFilesYouNeed.png "git add only what you need command image")
 
