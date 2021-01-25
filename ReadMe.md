@@ -31,3 +31,15 @@ In this example I am adding the changes to just one file but you can use the git
 The gitignore file is something we add to the codebase in order to avoid thing like the cache files (.pyc), the libraries installed in the lib folder and other files and folders not supposed to be in the codebase. This is not just a aesthetic issue, is also about productivity, when you need to clone the repository or deploy the code somewhere (like a server or a container) doing it fast increase the amount of things that you can do in a day.
 
 ![Image](img/gitignoreFile.png "gitignore File command image")
+
+
+## Someone made I change in one or several files and you need to work with the version of the file in a commit before the current version... introducing the time travel machine git
+
+When you want to work with the state of a particular file the way it was in a particular commit you need to use the git log to see the different commits in that repository and git checkout (yes, the same commit we use to travel between branches) to go to the past or come back to the current state of the repository.
+
+Some times the whole codebase is huge and you only want to travel to the past with a simple file or several files, in that case you execute git checkou fileName_1 fileNAme_2 fileName_3.
+
+Something that we all did when we was just starting with git was deleting the repository and creating a new one when a merge conflict appear, as you can see thats not neccesary and most important deleting a repository make us loose the versions of the files that we could need in the future.
+
+![Image](img/gitLog.png "git Log command image")
+![Image](img/gitCheckOut "git CheckOut file command image")
