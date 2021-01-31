@@ -42,4 +42,34 @@ Some times the whole codebase is huge and you only want to travel to the past wi
 Something that we all did when we was just starting with git was deleting the repository and creating a new one when a merge conflict appear, as you can see thats not neccesary and most important deleting a repository make us loose the versions of the files that we could need in the future.
 
 ![Image](img/gitLog.png "git Log command image")
-![Image](img/gitCheckOut "git CheckOut file command image")
+![Image](img/gitCheckOut.png "git CheckOut file command image")
+
+## I need to git delete several files because I actually deleted them or I moved them
+
+This is a productivity hack, imagine you moved several files and now you should git rm all of them as you can see in the picture below 
+
+![Image](img/severalPicturesToDelte.png "several Pictures To Delte")
+
+Remember, the command git rm not necessarily receive a single file, it can receive several files at the same time. So lets copy all of that that text and create a git rm command
+
+![Image](img/textCopiedTovsCode.png "text Copied To vs Code")
+
+The next thing that we need to do is use a find a replace command in our text editor, I am using vs code, here find and replace is carried out with ctrl + h.
+
+First, lets delete the "deleted:" substring, to do so, with replace that string by nothing, that is the same as deleting some substring.
+
+![Image](img/nowYouSeeTheDeleteWord.png "now you see the delete word")
+
+![Image](img/nowYouDontSeeTheDeleteWord.png "now you dont")
+
+Now we need to remove the line break, and tabs, to do so, we will use the regex symbol for newlines and tabs, when we found them, replace them for a simple whitespace (but a literal whitespace not the regex whitespace simple).
+
+![Image](img/findingNewLineTabsWhitespace.png "finding NewLine Tabs Whitespace")
+
+![Image](img/replacedByWhitespace.png "replaced By Whitespace")
+
+After we got the arguments the only thing missing is the command git rm. And now we can  apport value coding something meaningful instead of spend the half and hour we could of waste executing line by line.
+
+![Image](img/aboutToExecuteTheCommand.png "about To Execute The Command")
+
+![Image](img/CommandExecuted.png "Command Executed")
