@@ -73,3 +73,8 @@ After we got the arguments the only thing missing is the command git rm. And now
 ![Image](img/aboutToExecuteTheCommand.png "about To Execute The Command")
 
 ![Image](img/CommandExecuted.png "Command Executed")
+
+## I need to remember the url of the remote repository
+
+![Image](img/gitShowRemote.png "remember you origin")
+
